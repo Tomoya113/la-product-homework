@@ -1,0 +1,130 @@
+:root {
+  --size: 1;
+  --background: #D6E6F9;
+  --white: #fafafa;
+  --blue: #3E5DDB;
+}
+
+* {
+  font-family: Futura;
+}
+
+h2 {
+  margin: 0;
+}
+p {margin: 0;}
+
+section {
+  padding-top: 50px;
+}
+
+/* 共通のやーつ */
+
+.blue {
+  color: var(--blue);
+}
+
+.border-bottom {
+  border-bottom: solid 1px black;
+}
+
+.section-title {
+  font-size: 42px;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* navバー */
+
+.header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 940px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header nav {
+  display: flex;
+  position: absolute;
+  padding: 30px 60px;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+
+.header h2 {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  background: black;
+}
+
+.header nav li {
+  color: white;
+  font-size: 27px;
+  list-style: none;
+  transition: color 0.5s;
+}
+
+.header nav li:hover {
+  color: var(--blue)
+}
+
+.header nav li:not(:nth-child(1)) {
+  margin-left: 30px;
+}
+
+/* introduction */
+
+.introduction {
+  width: 100%;
+  height: 940px;
+}
+
+
+/* courses */
+
+.courses {
+  width: 100%;
+  height: 940px;
+  background-color: var(--background);
+}
+
+/* images */
+
+.images {
+  width: 100%;
+  height: 540px;
+}
+
+/* access */
+
+.access {
+  width: 100%;
+  height: 540px;
+}
+
+.access iframe {
+  margin-top: 50px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  padding: 70px 0 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 16px;
+}
