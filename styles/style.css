@@ -3,6 +3,7 @@
   --background: #D6E6F9;
   --white: #fafafa;
   --blue: #3E5DDB;
+  --yellow: #FFBF01;
 }
 
 * {
@@ -20,6 +21,42 @@ section {
 
 /* 共通のやーつ */
 
+.html {
+  background-color:#F16629;
+}
+
+.css {
+  background-color:#29A9DF;
+}
+
+.unity {
+  background-color:#333333;
+}
+
+.ruby {
+  background-color:#FF5252;
+}
+
+.javascript {
+  background-color:#FED700;
+}
+
+.swift {
+  background-color:#F16629;
+}
+
+.go {
+  background-color:#73CEDD;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
 .blue {
   color: var(--blue);
 }
@@ -29,8 +66,10 @@ section {
 }
 
 .section-title {
-  font-size: 42px;
+  font-size: 53px;
   text-align: center;
+  padding: 40px 0;
+  /* margin-bottom: 40px; */
 }
 
 .center {
@@ -50,57 +89,180 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url("../images/hero.jpg") no-repeat center/cover;
 }
 
 .header nav {
   display: flex;
   position: absolute;
-  padding: 30px 60px;
   top: 0;
   right: 0;
-  background-color: black;
+  padding: 0 50px;
 }
 
-.header h2 {
-  text-align: center;
-  font-size: 42px;
-  color: white;
-  background: black;
-}
-
-.header nav li {
+.header nav a {
   color: white;
   font-size: 27px;
   list-style: none;
   transition: color 0.5s;
+  padding: 30px 15px 0px;
 }
 
-.header nav li:hover {
+.header nav a:hover {
   color: var(--blue)
 }
 
 .header nav li:not(:nth-child(1)) {
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
+
+.header h2 {
+  /* font-family: serif; */
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-top: 30px;
+  font-weight: 100;
+  font-style: italic;
+}
+
 
 /* introduction */
 
 .introduction {
   width: 100%;
-  height: 940px;
+  height: 1000px;
+  padding-bottom: 80px;
+}
+
+.introduction-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.introduction-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0 30px;
+  margin: 0 0 40px;
+}
+
+.introduction-content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.introduction-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.introduction-detail p {
+  color: #333333;
+  font-family: 'Hiragino Kaku Gothic Pro';
+  font-size: 16px;
+  line-height: 2;
+  margin: 0 30px 20px;
+}
+
+.introduction-detail a {
+  font-size: 20px;
 }
 
 
 /* courses */
 
 .courses {
+  position: relative;
   width: 100%;
   height: 940px;
   background-color: var(--background);
+  z-index: 0;
+  padding: 0 0 50px;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+
+.courses h2 {
+  z-index: 2;
+}
+
+.card-container {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: #6a8998;
+  margin: 20px 10px 10px;
+  padding: 30px;
+}
+
+.card-image {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin: 0 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img {
+  object-fit: contain;
+  position: absolute;
+}
+
+.card p {
+  color: #183c61;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 20px 0px 0px;
+  text-align: center;
+  line-height: 22.5px;
+  font-family: 'Hiragino Kaku Gothic Pro';
+}
+
+.card a {
+  margin: 20px 5px 15px;
+}
+
+.button {
+  display: block;
+  width: 170px;
+  height: 40px;
+  border-radius: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.card a:hover {
+  box-shadow: #858c8e 0px 2px 15px 2px;
 }
 
 /* images */
-
 .images {
   width: 100%;
   height: 540px;
@@ -111,10 +273,6 @@ section {
 .access {
   width: 100%;
   height: 540px;
-}
-
-.access iframe {
-  margin-top: 50px;
 }
 
 /* footer */
