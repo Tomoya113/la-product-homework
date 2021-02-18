@@ -102,7 +102,6 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background: url("../images/hero.jpg") no-repeat center/cover; */
 }
 
 .header nav {
@@ -121,6 +120,7 @@ section {
   list-style: none;
   transition: color 0.5s;
   padding: 30px 15px 0px;
+  text-decoration: none;
 }
 
 .header nav a:hover {

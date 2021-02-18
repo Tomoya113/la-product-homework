@@ -24,7 +24,7 @@ $(function () {
     })
     
     $(".header").bgswitcher({
-        images: ["../images/introduction_001.jpg", "../images/introduction_002.jpg", "../images/hero.jpg"]
+        images: ["../images/background1.jpg", "../images/background2.jpg", "../images/background3.jpg", "../images/background4.jpg", "../images/background5.jpg",]
     })
     
     
