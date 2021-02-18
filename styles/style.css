@@ -102,6 +102,9 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .header nav {
