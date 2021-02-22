@@ -151,6 +151,13 @@ section {
   font-style: italic;
 }
 
+@media (max-width: 768px) { 
+  .header img {
+    display: block;
+    width: 80vw;
+  }
+}
+
 @media (max-width: 480px) {
   .header nav {
     display: none;
@@ -216,6 +223,22 @@ section {
   font-size: 20px;
 }
 
+@media (max-width: 768px) { 
+  .introduction-content {
+    flex-direction: column;
+    padding: 0 0 15px;
+    margin: 0 0 20px;
+  }
+
+  .introduction-content:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .introduction-content img {
+    width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   .introduction {
     padding: 40px 0;
@@ -278,6 +301,12 @@ section {
 @media (max-width: 1170px) {
   .card-container {
     width: 768px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .card-container {
+    width: 100%;
   }
 }
 
